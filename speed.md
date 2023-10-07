@@ -173,3 +173,54 @@ d:
 e:
 drop
 ```
+
+### 13
+```
+step s
+pickup c
+if w == nothing:
+	step w
+	a:
+	step se
+	if se == wall:
+		step ne
+		step n
+		step n
+		drop
+		b:
+		jump c
+	endif
+	jump a
+endif
+if e == nothing:
+	step se
+	step se
+	drop
+	jump b
+endif
+step s
+step s
+d:
+e:
+step e
+if e == wall:
+	step s
+	step s
+	f:
+	step w
+	if c == nothing:
+		drop
+		jump g
+	endif
+	if w == wall:
+		step s
+		step s
+		jump d
+	endif
+	jump f
+endif
+jump e
+g:
+c:
+step n
+```

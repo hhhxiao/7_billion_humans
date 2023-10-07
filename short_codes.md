@@ -121,3 +121,23 @@ endif
 jump a
 
 ```
+
+### 13
+```
+pickup s
+a:
+step e
+if w == datacube and
+ c != datacube:
+	drop
+endif
+if e == wall:
+	step s
+	b:
+	step w
+	if w != wall:
+		jump b
+	endif
+endif
+jump a
+```
