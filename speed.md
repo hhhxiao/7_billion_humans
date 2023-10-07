@@ -224,3 +224,13 @@ g:
 c:
 step n
 ```
+
+### 14
+```
+if s == datacube:
+	pickup s
+	step s
+	step s
+	giveto s
+endif
+```

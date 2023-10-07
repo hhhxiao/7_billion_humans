@@ -101,7 +101,6 @@ if w == datacube:
 	drop
 endif
 jump a
-
 ```
 
 ### 12
@@ -119,7 +118,6 @@ if w != worker:
 	drop
 endif
 jump a
-
 ```
 
 ### 13
@@ -140,4 +138,13 @@ if e == wall:
 	endif
 endif
 jump a
+```
+
+### 14
+
+```
+pickup s
+step s
+step s
+giveto s
 ```
