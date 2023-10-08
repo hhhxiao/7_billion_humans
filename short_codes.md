@@ -167,3 +167,51 @@ endif
 jump b
 
 ```
+### 16
+```
+a:
+step s
+if c == datacube:
+	pickup c
+	b:
+	step e
+	if s == shredder:
+		giveto s
+	endif
+	jump b
+endif
+jump a
+```
+
+### 17
+```
+pickup s
+```
+
+
+
+
+### 18
+```
+step sw
+pickup n
+a:
+if s != shredder:
+	step se
+	jump a
+endif
+giveto s
+```
+### 19
+```
+a:
+takefrom s
+giveto se
+step w
+jump a
+```
+
+
+
+
+

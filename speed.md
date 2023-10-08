@@ -251,3 +251,76 @@ if n == datacube:
 endif
 jump b
 ```
+### 16
+```
+step s
+step s
+step se
+if nw == nothing and
+ se == worker:
+	step s
+	step s
+	pickup sw
+	step e
+	step e
+	step e
+	step se
+	step e
+	giveto s
+endif
+if nw == worker and
+ se == nothing:
+	pickup sw
+	step e
+	step e
+	step se
+	giveto s
+	step s
+	end
+endif
+a:
+if w == nothing and
+ e == nothing:
+	step s
+	pickup sw
+	step e
+	step e
+	step e
+	step se
+	giveto s
+	step n
+	end
+endif
+jump a
+```
+
+### 17
+```
+pickup s
+```
+
+
+
+### 18
+```
+step sw
+pickup n
+a:
+if s != shredder:
+	step se
+	jump a
+endif
+giveto s
+```
+### 19
+```
+a:
+takefrom s
+giveto se
+step w
+jump a
+```
+
+
+
+
